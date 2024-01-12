@@ -24,3 +24,8 @@ func get_input():
 	if Input.is_action_just_pressed("right") and direction != Vector2.LEFT:
 		direction = (Vector2.RIGHT)
 		
+
+
+func _on_area_2d_area_entered(area):
+	if (area.is_type("Wall.tscn")):
+		print("I died!")

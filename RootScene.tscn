@@ -8,4 +8,20 @@
 [node name="Player" parent="." instance=ExtResource("1_4gcoe")]
 position = Vector2(513, 51)
 
+[node name="Wall" parent="." instance=ExtResource("2_ot8sh")]
+position = Vector2(0, 354)
+scale = Vector2(1.48, 6.12)
+
 [node name="Wall2" parent="." instance=ExtResource("2_ot8sh")]
+position = Vector2(1161, 354)
+scale = Vector2(1.48, 6.12)
+
+[node name="Wall3" parent="." instance=ExtResource("2_ot8sh")]
+position = Vector2(578, 653)
+rotation = 1.5708
+scale = Vector2(1.48, 9.2)
+
+[node name="Wall4" parent="." instance=ExtResource("2_ot8sh")]
+position = Vector2(568, -7)
+rotation = 1.5708
+scale = Vector2(1.48, 9.2)

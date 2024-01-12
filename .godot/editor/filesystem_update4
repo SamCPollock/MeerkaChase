@@ -1,4 +1,4 @@
-res://Player.tscn
-res://Player.gd
 res://RootScene.tscn
+res://Player.tscn
 res://Wall.tscn
+res://Player.gd
