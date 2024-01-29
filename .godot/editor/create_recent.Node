@@ -1,4 +1,5 @@
-Area2D
+Label
 Sprite2D
 CollisionShape2D
+Area2D
 CharacterBody2D

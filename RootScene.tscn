@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqe58pr3brrmj"]
+[gd_scene load_steps=5 format=3 uid="uid://dqe58pr3brrmj"]
 
 [ext_resource type="PackedScene" uid="uid://cb6bp6tf7argk" path="res://Player.tscn" id="1_4gcoe"]
 [ext_resource type="PackedScene" uid="uid://3a8qcopbwt4c" path="res://Wall.tscn" id="2_ot8sh"]
+[ext_resource type="PackedScene" uid="uid://bbp3qkr4la53b" path="res://Pickup.tscn" id="3_nut2p"]
+[ext_resource type="PackedScene" uid="uid://bydwlfupvc5qy" path="res://ui.tscn" id="4_ylb6q"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -25,3 +27,14 @@ scale = Vector2(1.48, 9.2)
 position = Vector2(568, -7)
 rotation = 1.5708
 scale = Vector2(1.48, 9.2)
+
+[node name="Pickup" parent="." instance=ExtResource("3_nut2p")]
+position = Vector2(817, 360)
+
+[node name="Pickup2" parent="." instance=ExtResource("3_nut2p")]
+position = Vector2(280, 283)
+
+[node name="Pickup3" parent="." instance=ExtResource("3_nut2p")]
+position = Vector2(590, 513)
+
+[node name="UI" parent="." instance=ExtResource("4_ylb6q")]

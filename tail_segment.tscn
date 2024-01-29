@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b35eipb0f7s2b"]
+
+[ext_resource type="Texture2D" uid="uid://bdgasfxyuhfa2" path="res://icon.svg" id="1_ad2j7"]
+[ext_resource type="Script" path="res://tail_segment.gd" id="1_ts0k2"]
+
+[node name="TailSegment" type="Node2D"]
+script = ExtResource("1_ts0k2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.345098, 0.152941, 1)
+texture = ExtResource("1_ad2j7")

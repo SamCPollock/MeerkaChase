@@ -21,7 +21,7 @@ func _process(delta):
 	pass
 "
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 scale = Vector2(0.4, 0.4)
 script = ExtResource("1_ds07i")
 
@@ -32,7 +32,7 @@ script = SubResource("GDScript_p3qd5")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_hl6kg")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." groups=["Player"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_nbel6")

@@ -2,6 +2,10 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 var direction = Vector2.RIGHT
+var originalPos
+
+func _enter_tree():
+	originalPos = position
 
 func _process(delta):
 		get_input()
@@ -27,5 +31,7 @@ func get_input():
 
 
 func _on_area_2d_area_entered(area):
-	if (area.is_type("Wall.tscn")):
-		print("I died!")
+	if (area.is_in_group("Danger")):
+		position = originalPos
+		print ("GAME OVER!!!")
+		

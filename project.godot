@@ -15,6 +15,10 @@ run/main_scene="res://RootScene.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SignalManagerAutoload="*res://SignalManager_Autoload.gd"
+
 [dotnet]
 
 project/assembly_name="Meerka Chase"

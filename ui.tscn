@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bydwlfupvc5qy"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_qrfhn"]
+
+[node name="UI" type="Node2D"]
+script = ExtResource("1_qrfhn")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score"
+
+[node name="PointValue" type="Label" parent="."]
+offset_top = 19.0
+offset_right = 43.0
+offset_bottom = 45.0
+text = "000
+"

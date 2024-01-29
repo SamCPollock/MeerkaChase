@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gk2fe"]
 size = Vector2(24, 124)
 
-[node name="Wall2" type="Area2D"]
+[node name="Wall2" type="Area2D" groups=["Danger"]]
 
 [node name="Wall" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
