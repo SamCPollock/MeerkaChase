@@ -1,8 +1,12 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+var speed = 300.0
+var speedIncrement = 50
 var direction = Vector2.RIGHT
 var originalPos
+
+func _ready():
+	SignalManagerAutoload.point_collected.connect(SpeedUp)
 
 func _enter_tree():
 	originalPos = position
@@ -13,7 +17,7 @@ func _process(delta):
 func _physics_process(delta):
 	#var direction = Input.get_vector("left", "right", "up", "down")
 	#if direction:
-	velocity = SPEED * direction
+	velocity = speed * direction
 	#velocity = move_toward(velocity, 0, SPEED)
 
 	move_and_slide()
@@ -35,3 +39,5 @@ func _on_area_2d_area_entered(area):
 		position = originalPos
 		print ("GAME OVER!!!")
 		
+func SpeedUp():
+	speed += speedIncrement

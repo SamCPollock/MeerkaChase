@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvpy4333mqk2f"]
+
+[ext_resource type="Script" path="res://PointSpawner.gd" id="1_m182l"]
+
+[node name="PointSpawner" type="Node2D"]
+script = ExtResource("1_m182l")

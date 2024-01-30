@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqe58pr3brrmj"]
+[gd_scene load_steps=6 format=3 uid="uid://dqe58pr3brrmj"]
 
 [ext_resource type="PackedScene" uid="uid://cb6bp6tf7argk" path="res://Player.tscn" id="1_4gcoe"]
 [ext_resource type="PackedScene" uid="uid://3a8qcopbwt4c" path="res://Wall.tscn" id="2_ot8sh"]
 [ext_resource type="PackedScene" uid="uid://bbp3qkr4la53b" path="res://Pickup.tscn" id="3_nut2p"]
 [ext_resource type="PackedScene" uid="uid://bydwlfupvc5qy" path="res://ui.tscn" id="4_ylb6q"]
+[ext_resource type="PackedScene" uid="uid://dvpy4333mqk2f" path="res://point_spawner.tscn" id="5_r5s33"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -38,3 +39,6 @@ position = Vector2(280, 283)
 position = Vector2(590, 513)
 
 [node name="UI" parent="." instance=ExtResource("4_ylb6q")]
+
+[node name="PointSpawner" parent="." instance=ExtResource("5_r5s33")]
+thingToSpawn = ExtResource("3_nut2p")

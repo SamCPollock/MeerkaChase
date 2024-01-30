@@ -1,11 +1,10 @@
 res://RootScene.tscn
 res://Player.tscn
 res://Wall.tscn
-res://Player.gd
 res://Pickup.tscn
-res://Pickup.gd
 res://tail_segment.tscn
-res://tail_segment.gd
 res://ui.tscn
-res://ui.gd
-res://SignalManager_Autoload.gd
+res://Player.gd
+res://PointSpawner.gd
+res://Pickup.gd
+res://point_spawner.tscn

@@ -13,8 +13,7 @@ func _process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	print("SOMETHING ENTERED")
-	SignalManagerAutoload.point_collected.emit()
 	if (area.is_in_group("Player")):
+		SignalManagerAutoload.point_collected.emit()	
 		print("EARNED SCORE!")
 		queue_free()
